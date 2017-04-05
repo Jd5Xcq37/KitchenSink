@@ -1,0 +1,5 @@
+C:\Users\Dawid\Desktop\KitchenSink-master\bin\Debug\KitchenSink.exe
+C:\Users\Dawid\Desktop\KitchenSink-master\bin\Debug\KitchenSink.pdb
+C:\Users\Dawid\Desktop\KitchenSink-master\src\KitchenSink\obj\x64\Debug\KitchenSink.csprojResolveAssemblyReference.cache
+C:\Users\Dawid\Desktop\KitchenSink-master\src\KitchenSink\obj\x64\Debug\KitchenSink.exe
+C:\Users\Dawid\Desktop\KitchenSink-master\src\KitchenSink\obj\x64\Debug\KitchenSink.pdb

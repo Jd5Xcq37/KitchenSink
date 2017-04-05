@@ -1,0 +1,43 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<script src="https://use.fontawesome.com/30f9186e11.js"></script>
+
+<style>
+    .btn:hover > .sortable-page-button {
+        color: red;
+    }
+
+</style>
+<template>
+    <template is="dom-bind">
+        <h1>Sortable List</h1>
+        <table class="table table-striped table-hover" id="sortable-list">
+            <thead>
+                <tr>
+                    <th>Person</th>
+                    <th>Order No.</th>
+                    <th>Up</th>
+                    <th>Down</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template is="dom-repeat" items="{{model.People}}">
+                    <tr>
+                        <td>{{item.FullName}}</td>
+                        <td>{{item.OrderNo}}</td>
+
+                       <td><button class="btn btn-sm btn-default" 
+                                    value="{{item.OrderUpTrigger$::click}}" 
+                                    onmousedown="++this.value" 
+                                    disabled={{item.OrderUpButtonDisabled$}}
+                        ><i class="fa fa-thumbs-up sortable-page-button" aria-hidden="true"></i>UP</button></td>
+                        <td><button class="btn btn-sm btn-default" 
+                                    value="{{item.OrderDownTrigger$::click}}" 
+                                    onmousedown="--this.value"
+                                    disabled={{item.OrderDownButtonDisabled$}}
+                        ><i class="fa fa-thumbs-down sortable-page-button" aria-hidden="true"></i>DONW</button></td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>         
+    </template>
+</template>
